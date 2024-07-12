@@ -1,5 +1,6 @@
 plugins {
     id("com.android.library")
+    id("maven-publish")
 }
 
 android {
@@ -33,6 +34,18 @@ android {
         singleVariant("release") {
             withSourcesJar()
         }
+    }
+
+}
+
+publishing{
+    publications{
+        register<MavenPublication>("release"){
+            afterEvaluate{
+                from(components["release"])
+            }
+        }
+
     }
 
 }
