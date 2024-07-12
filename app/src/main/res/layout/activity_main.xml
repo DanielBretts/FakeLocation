@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Latitude"
-        android:inputType="numberDecimal"
+        android:inputType="numberDecimal|numberSigned"
         android:layout_below="@id/currentLocationText"
         android:layout_marginBottom="8dp"/>
 
@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Longitude"
-        android:inputType="numberDecimal"
+        android:inputType="numberDecimal|numberSigned"
         android:layout_below="@id/editLatitude"
         android:layout_marginBottom="16dp"/>
 
