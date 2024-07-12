@@ -35,7 +35,6 @@ android {
             withSourcesJar()
         }
     }
-
 }
 
 publishing{
@@ -47,7 +46,6 @@ publishing{
         }
 
     }
-
 }
 
 dependencies {
