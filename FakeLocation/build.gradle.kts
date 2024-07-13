@@ -60,7 +60,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "com.github.DanielBretts"
             artifactId = "FakeLocation"
-            version = "1.0.1"
+            version = "1.0.2"
             pom {
                 description = "Fake Location Library"
             }
