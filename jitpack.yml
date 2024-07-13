@@ -5,4 +5,4 @@ before_install:
   - ./scripts/prepareJitpackEnvironment.sh
 install:
   - FILE="-Dfile=FILE_NAME.aar"
-  - mvn install:install-file $FILE -DgroupId=com.github.DanielBretts -DartifactId=FakeLocation -Dversion=1.00.00 -Dpackaging=aar -DgeneratePom=true
+  - mvn install:install-file $FILE -DgroupId=com.github.DanielBretts -DartifactId=FakeLocation -Dversion=1.0.0 -Dpackaging=aar -DgeneratePom=true
