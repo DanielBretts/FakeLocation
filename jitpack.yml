@@ -1,0 +1,8 @@
+# configuration file for building snapshots and releases with jitpack.io
+jdk:
+  - openjdk17
+before_install:
+  - ./scripts/prepareJitpackEnvironment.sh
+install:
+  - FILE="-Dfile=FILE_NAME.aar"
+  - mvn install:install-file $FILE -DgroupId=com.github.DanielBretts -DartifactId=FakeLocation -Dversion=1.00.00 -Dpackaging=aar -DgeneratePom=true
